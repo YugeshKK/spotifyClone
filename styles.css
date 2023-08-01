@@ -2,3 +2,64 @@
     margin: 0;
     padding: 0;
 }
+a{
+    font-size: 16px;    
+}
+#logo{
+    margin-top: 30px;
+    margin-right: 20px;
+}
+.main{
+    display: grid;
+    grid-template-columns: 250px auto;
+}
+.main div{
+    border: 1px solid black;
+}
+.sidebar{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-color: black ;
+    color: white;
+}
+.top-arr{
+    grid-column: 2/12;
+}
+.hero{
+    grid-column: 2/12;
+}
+.foot{
+    grid-column: 1/12;
+}
+.side{
+    display: flex;
+    flex-direction: column;
+}
+li{
+    margin-bottom: 10px;
+    align-items: center;
+}
+li>a{
+   margin-left: 20px;
+} 
+#heart{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 3px;
+    background-image: linear-gradient( to right ,#5729F0, #B1CFDC);
+}
+.sep{
+    margin-top: 25px;
+}
+.fav {
+    margin-top: 15px;
+}
+
+.fav a{
+    margin-left: 0;
+}
+.install{
+    margin-top: 35px;
+    font-size: 19px;
+}
