@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.main{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 200px auto;
+}
+
+.sidebar{
+    grid-row: 1/3;
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+nav{
+    height: 400px;
+    font-size: 14px;
+}
+.logo{
+    margin: 5px;
+}
+.side{
+    display: flex;
+    flex-direction: column;
+}
+
+li{
+    margin-bottom: 10px;
+    align-items: center;
+}
+li>a{
+   margin-left: 20px;
+} 
+#heart{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 3px;
+    background-image: linear-gradient( to right ,#5729F0, #B1CFDC);
+}
+.sep{
+    margin-top: 5px;
+}
+
+
+/* Top */
+
+.top{
+    grid-column: 2/4;
+    margin-bottom: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: linear-gradient(180deg, #90AEA7 0%, #000000 89.7%);
+}
+#salena{
+    background-image: url(images/salena.jpg);
+    background-size: cover;
+    background-position: -50px;
+    height: 200px;
+    margin: 30px;
+    opacity: .5;
+    width: 200px;
+    text-align: center;
+}
+#salena p{
+    margin-top: 105px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.text{
+    margin-top: 40px;
+}
+.second{
+    border-top: 1px solid rgb(10, 10, 10);
+}
+.second img{
+    margin-left: 20px;
+}
+.topsec{
+    font-size: 10px;
+    opacity: 0.7;
+    margin: 0;
+    text-align: center;
+}
+
+.songs{
+    grid-column: 2/4;
+    background-color: black;
+}
+
+.title{
+    margin: 10px;
+}
+.card{
+    max-height: 55px;
+    width: 100%;
+    font-size: 15px;
+}
+.card p{
+opacity: 0.8;
+}
+.pu{
+    margin-left: 170px;
+}
+.date{
+    margin-left: 270px;
+}
+.last{
+    margin-left: 130px;
+    max-width: 200px;
+}
+
+
+
+
+.controls{
+    grid-column: 1/4;
+    position: sticky;
+    display: flex;
+    /* height:10vh; */
+    background-color: #181818;
+    bottom: 0;
+    color: white;
+    z-index: 1;
+}
+
+
+.info{
+    display: flex;
+    justify-content: space-evenly;
+}
+.info p{
+    font-size: 14px;
+    margin-top: 17px;
+    padding-left: 15px;
+}
+
+#pic{
+    height: 76px;
+    width: 70px;
+    padding: 3px;
+}
+
+#her{
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+
+.musicont{
+    width: 400px;
+    margin-left: 60px;
+}
+.player{
+    min-width: 620px;
+
+}
+.play{
+    min-width: 300px;
+    margin-left: 160px;
+}
+.num{
+    font-size: 14px;
+    margin: 10px;
+}
+#played{
+    width: 200px;
+    height: 5px;
+    background-color: #45424D;
+}
+#length{
+    width: 550px;
+    height: 5px;
+    margin-bottom: 16px;
+    background: whitesmoke;
+}
+.mick{
+    margin-top: 35px;
+    min-width: 200px;
+    margin-left: 250px;
+}
+#vol{
+    width: 30px;
+    height: 4px;
+    margin-top: 20px;
+    background-color: #45424D;
+}
