@@ -13,15 +13,17 @@
 
       <!-- Side bar -->
         <div class="sidebar">
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar  navbar-expand-lg">
                 <div class="side container-fluid">
-                    <div class="lggo d-flex align-items-center m-3 me-4">
-                        <img src="images/icons8-spotify-50 (1).png" width="50px" height="49px" alt="">   
-                        <a style="margin-left: 12px; color: white; font-size: 33px;" href="" class="navbar-brand"><b>Spotify</b></a> 
-                    </div>  
+                  <div id="non">
+                    <div class="logo d-flex align-items-center m-3 me-4">
+                      <img src="images/icons8-spotify-50 (1).png" width="50px" height="49px" alt="">   
+                      <a style="margin-left: 12px; color: white; font-size: 33px;" href="" class="navbar-brand"><b>Spotify</b></a> 
+                  </div>  
+                  </div>
 
-                    <ul class="side2 navbar-nav d-flex flex-column align-items-start mt-4">
-                      <li class="nav-item d-flex align-items-center">
+                    <ul class="side2  mt-4">
+                      <li class="nav-item d-flex  align-items-center">
                         <svg width="24" height="24" viewBox="0 0 31 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_306_615)">
                             <path d="M15.5849 19.6659C14.6021 19.6659 13.6596 20.0888 12.9646 20.8417C12.2697 21.5946 11.8793 22.6157 11.8793 23.6804V33.0822H19.2906V23.6804C19.2906 22.6157 18.9002 21.5946 18.2052 20.8417C17.5103 20.0888 16.5677 19.6659 15.5849 19.6659Z" fill="white"/>
@@ -56,27 +58,29 @@
                             </svg>                            
                         <a class="nav-link text-white"  href="#">Your Library</a>
                       </li>
-                      <li class="nav-item d-flex sep">
+                      <li class="sep nav-item d-flex" id="sep">
                             <img src="images/icons8-playlist-50 (1).png" height="29" alt="">
                         <a class="nav-link text-white" id="playList" href="playlist.html" >PlayList</a>
                       </li>
-                      <li class="nav-item d-flex">
-                        <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16.8201 14.0944V7.91833H14.3497V14.0944H8.17358V16.5649H14.3497V22.741H16.8201V16.5649H22.9962V14.0944H16.8201Z" fill="white"/>
-                            </svg>
-                        <a class="nav-link text-white"  href="#">Create PlayList</a>
-                      </li>
-                      <li class="nav-item d-flex">
-                        <svg id="heart" width="19" height="19" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8.23299 0.313354C7.72879 0.321197 7.23557 0.461948 6.80317 0.721392C6.37076 0.980836 6.01447 1.34979 5.77027 1.79099C5.52608 1.34979 5.16979 0.980836 4.73738 0.721392C4.30497 0.461948 3.81176 0.321197 3.30755 0.313354C2.50378 0.348276 1.7465 0.699891 1.20116 1.29138C0.655812 1.88287 0.366729 2.66616 0.397065 3.47011C0.397065 6.50374 5.3028 10.0075 5.51146 10.1562L5.77027 10.3393L6.02908 10.1562C6.23774 10.0084 11.1435 6.50374 11.1435 3.47011C11.1738 2.66616 10.8847 1.88287 10.3394 1.29138C9.79404 0.699891 9.03676 0.348276 8.23299 0.313354Z" fill="white"/>
-                            </svg>
-                            
-                        <a class="nav-link text-white"  href="#">Liked Songs</a>
-                      </li>
-                      <li class="nav-item d-flex">
-                        <img src="images/icons8-hotspot-48.png" height="29" alt="">
-                        <a class="nav-link text-white"  href="#">Your Episode</a>
-                      </li>
+                      <div class="fav1">
+                        <li class="nav-item d-flex">
+                          <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.8201 14.0944V7.91833H14.3497V14.0944H8.17358V16.5649H14.3497V22.741H16.8201V16.5649H22.9962V14.0944H16.8201Z" fill="white"/>
+                              </svg>
+                          <a class="nav-link text-white"  href="#">Create PlayList</a>
+                        </li>
+                        <li class="nav-item d-flex">
+                          <svg id="heart" width="19" height="19" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M8.23299 0.313354C7.72879 0.321197 7.23557 0.461948 6.80317 0.721392C6.37076 0.980836 6.01447 1.34979 5.77027 1.79099C5.52608 1.34979 5.16979 0.980836 4.73738 0.721392C4.30497 0.461948 3.81176 0.321197 3.30755 0.313354C2.50378 0.348276 1.7465 0.699891 1.20116 1.29138C0.655812 1.88287 0.366729 2.66616 0.397065 3.47011C0.397065 6.50374 5.3028 10.0075 5.51146 10.1562L5.77027 10.3393L6.02908 10.1562C6.23774 10.0084 11.1435 6.50374 11.1435 3.47011C11.1738 2.66616 10.8847 1.88287 10.3394 1.29138C9.79404 0.699891 9.03676 0.348276 8.23299 0.313354Z" fill="white"/>
+                              </svg>
+                              
+                          <a class="nav-link text-white"  href="#">Liked Songs</a>
+                        </li>
+                        <li class="nav-item d-flex">
+                          <img src="images/icons8-hotspot-48.png" height="29" alt="">
+                          <a class="nav-link text-white"  href="#">Your Episode</a>
+                        </li>
+                      </div>
 
                       <div class="fav">
                         <li class="nav-item d-flex fav">
@@ -98,12 +102,14 @@
                             <a class="nav-link text-white"  href="#">EDM/Popular</a>
                           </li>
                       </div>
-                      <li class="install nav-item d-flex">
-                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21.0553 14.8841L14.8792 21.0602L8.70313 14.8841M14.8792 7.47273V19.8249V7.47273ZM14.8792 1.29663C22.3832 1.29663 28.4667 7.38009 28.4667 14.8841C28.4667 22.388 22.3832 28.4715 14.8792 28.4715C7.37527 28.4715 1.29181 22.388 1.29181 14.8841C1.29181 7.38009 7.37527 1.29663 14.8792 1.29663Z" stroke="white" stroke-width="2"/>
-                            </svg>
-                        <a class="nav-link text-white"  href="https://www.spotify.com/us/download/windows/">Install App</a>
-                      </li>
+                      <div class="install">
+                        <li class="nav-item d-flex">
+                          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M21.0553 14.8841L14.8792 21.0602L8.70313 14.8841M14.8792 7.47273V19.8249V7.47273ZM14.8792 1.29663C22.3832 1.29663 28.4667 7.38009 28.4667 14.8841C28.4667 22.388 22.3832 28.4715 14.8792 28.4715C7.37527 28.4715 1.29181 22.388 1.29181 14.8841C1.29181 7.38009 7.37527 1.29663 14.8792 1.29663Z" stroke="white" stroke-width="2"/>
+                              </svg>
+                          <a class="nav-link text-white"  href="https://www.spotify.com/us/download/windows/">Install App</a>
+                        </li>
+                      </div>
 
                     </ul>
                   </div>
@@ -130,7 +136,7 @@
             <h2><b>Good Morning</b></h2>
             <div class="main1 d-flex flex-column justify-content-around">
                 <div class="one d-flex">
-                    <div class="cards1 d-flex">
+                    <div class="cards1 d-flex ">
                         <img src="images/icons8-heart-24.png" width="65px"  height="65px" style="  background-image: linear-gradient( to right ,#5729F0, #B1CFDC); padding: 20px;">
                         <p>Liked Songs</p>
                     </div>
@@ -266,7 +272,7 @@
                       <img src="images/icons8-repeat-30.png" width="20px" height="20px" alt="">
                     </div>
                     <div class="player d-flex align-items-end">
-                      <p class="num">4:11</p>
+                      <p class="num">0:00</p>
                       <input type="range" name="range" id="length" min="0" max="100" value="0">
                       </p>
                       <p class="num">6:39</p>
@@ -278,7 +284,7 @@
                     <img src="images/icons8-laptop-30.png" width="20px" height="20px" alt="">
                     <img src="images/icons8-audio-50.png" width="20px" height="20px" alt="">
                     <p id="vol"></p>
-                    <img src="images/icons8-expand-32.png" width="20px" height="20px" alt="">
+                    <img id="ex" src="images/icons8-expand-32.png" width="20px" height="20px" alt="">
                 </div>
             </div>
             <div class="green">

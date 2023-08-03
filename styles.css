@@ -25,6 +25,15 @@ a{
     z-index: 0;
     overflow: scroll;
 }
+.side{
+    display: flex;
+    flex-direction: column;
+}
+.side2{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
 .top-arr{
     grid-column: 2/12;
     max-height: 150px;
@@ -43,9 +52,8 @@ a{
 .foot{
     grid-column: 1/12;
 }
-.side{
-    display: flex;
-    flex-direction: column;
+ul{
+    height:100vh;
 }
 li{
     margin-bottom: 10px;
@@ -209,7 +217,7 @@ li>a{
 }
 .mick{
     margin-top: 35px;
-    min-width: 200px;
+    width: 200px;
     margin-right: 20px;
 }
 #vol{
@@ -228,6 +236,204 @@ li>a{
     margin-left: 1100px;
 }
 
-#playList{
-    
+@media (width<=768px){
+    .main{
+        display: grid;
+        grid-template-columns: 200px auto;
+    }
+    .sidebar{
+        height: 97vh;
+    }
+    .top-arr{
+        width: 650px;
+    }
+    .hero{
+        width: 650px;
+    }
+     .logo img{
+        width: 25px;
+        height: 25px;
+    }
+     .logo a{
+        font-size: 12px;
+    }
+    .main1{
+    display: flex;
+    flex-direction: column;
+    }
+    .one img{
+        width: 50px;
+        height:50px;
+    }
+    .two img{
+        width: 50px;
+        height:50px;
+    }
+    .cards1{
+        min-width: 100px;
+        height: 50px;
+        font-size: 15px;
+    }
+    .images{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    #pic{
+        height: 60px;
+        width: 50px;
+        padding: 3px;
+    }
+    .info p{
+        font-size: 12px;
+    }
+    .green{
+       display: none;
+    }
+    .controls{
+        width: 700px;
+    }
+    .musicont{
+        width: 200px;
+    }
+    .player{
+        max-width: 400px;
+        margin-left: 60px;
+    }
+    .play{
+        min-width: 200px;
+        margin-left: 180px;
+    }
+    #length{
+        width: 400px;
+        margin-left: 10px;
+    }
+    .mick{
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 40px;
+    }
+    .mick img{
+        width: 12px;
+        height: 12px;
+        margin-left: 10px;
+    }
+    #vol, #ex{
+        display: none;
+    } 
+
+}
+
+@media (width<=320px){
+    .main{
+        display: grid;
+        grid-template-columns: auto;
+
+    }
+    .top-arr{
+        grid-column: 1/12;
+        width: 204vh;
+    }
+    .sidebar{
+        grid-column: 1/12;
+        position: sticky;
+        top: 0;
+        max-height: 100px;
+        z-index: 1;
+        overflow: hidden;
+    }
+    .side{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .side2{
+        display: flex;
+        flex-direction: row;
+        margin-left: 70px;
+    }  
+    .hero{
+        grid-column: 1/12;
+        width: 204vh;
+        height: 140vh;
+    }
+    #sep{
+        margin-top: 5px;
+    }
+    .fav, .fav1, .install{
+        display: none;
+    }
+    .foot{
+        width: 204vh;
+    }
+    #non{
+       display: none;
+    }
+    .top-arr{
+    display: none;
+    }
+    .hero{
+        height: 300vh;
+    }
+    .one img{
+        width: 50px;
+        height:50px;
+    }
+    .two img{
+        width: 50px;
+        height:50px;
+    }
+    .cards1{
+        width: 250px;
+        height: 50px;
+        margin: auto;
+        font-size: 15px;
+    }
+    .images{
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 10px;
+    }
+    #pic{
+        height: 60px;
+        width: 50px;
+        padding: 3px;
+    }
+    .info p{
+        font-size: 12px;
+    }
+    .green{
+       display: none;
+    }
+    .controls{
+        width: 700px;
+    }
+    .musicont{
+        width: 200px;
+    }
+    .player{
+        max-width: 400px;
+        margin-left: 60px;
+    }
+    .play{
+        min-width: 200px;
+        margin-left: 180px;
+    }
+    #length{
+        width: 400px;
+        margin-left: 10px;
+    }
+    .mick{
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 40px;
+    }
+    .mick img{
+        width: 12px;
+        height: 12px;
+        margin-left: 10px;
+    }
+    #vol, #ex{
+        display: none;
+    } 
+
 }
