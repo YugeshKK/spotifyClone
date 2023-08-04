@@ -13,7 +13,7 @@
 
 .sidebar{
     grid-row: 1/3;
-    position: sticky;
+    position: fixed;
     top: 0;
     background-color: black;
 }
@@ -25,6 +25,10 @@ nav{
     margin: 5px;
 }
 .side{
+    display: flex;
+    flex-direction: column;
+}
+.side2{
     display: flex;
     flex-direction: column;
 }
@@ -75,8 +79,13 @@ li>a{
     font-weight: 500;
     margin-left: 40px;
 }
+
 .text{
     margin-top: 40px;
+}
+.text h1{
+    font-weight: 500;
+    font-size: 70px;
 }
 .second{
     border-top: 1px solid rgb(10, 10, 10);
@@ -159,10 +168,10 @@ opacity: 0.8;
     width: 400px;
     margin-left: 60px;
 }
-.player{
-    min-width: 620px;
+    .player{
+        min-width: 620px;
 
-}
+    }
 .play{
     min-width: 300px;
     margin-left: 160px;
@@ -193,3 +202,305 @@ opacity: 0.8;
     margin-top: 20px;
     background-color: #45424D;
 }
+
+
+
+@media screen and (width<=768px) {
+   .main{
+    display: grid;
+    grid-template-columns: 200px auto;
+   }
+   .sidebar{
+    height: 130vh;
+    font-size: 12px;
+    margin-right: 20px;
+   }
+   .top{
+    width: 650px;
+   }
+   #salena{
+    margin-top: 80px;
+    width: 300px;
+    background-position: -19px;
+    height: 150px;
+   }
+   .text h1{
+    font-size: 30px;
+    font-weight: 700;
+   }
+   .text p{
+    font-size: 13px;
+   }
+   .pu{
+    margin-left: 0;
+   }
+   .card{
+    max-width: 650px;
+   }
+   .date{
+    margin-left: 0;
+   }
+   .card p{
+    font-size: 12px;
+   }
+   .songs{
+    width: 650px;
+   }
+   .first-sec{
+    width: 500px;
+   }
+   .second{
+    width: 500px;
+   }
+   .controls{
+    width: 850px;
+   }   
+   .info p{
+    font-size: 12px;
+   } 
+   #pic{
+    margin-top: 10px;
+   }
+   #her{
+    margin-top: 25px;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    }
+    .musicont{
+        width: 300px;
+        margin-left: 0;
+    }
+    .play{
+        width: 200px;
+        margin-left: 90px;
+    }
+    .player{
+    min-width:fit-content
+    }
+    #length{
+        width: 300px;
+        margin-left: 30px;
+    }
+    .mick{
+        min-width:120px;
+        margin-left: 140px;
+    }
+    .ex, #vol{
+        display: none;
+    }
+} 
+
+
+ @media screen and (width<=426px) {
+    .main{
+     display: grid;
+     grid-template-columns: 200px auto;
+     height: 200vh;
+    }
+    .sidebar{
+     height: 170vh;
+     font-size: 12px;
+     margin-right: 20px;
+    }
+    .top{
+     width:570px;
+    }
+    #salena{
+     margin-top: 80px;
+     width: 300px;
+     background-position: -19px;
+     height: 150px;
+    }
+    .text h1{
+     font-size: 30px;
+     font-weight: 700;
+    }
+    .text p{
+     font-size: 13px;
+    }
+    .pu{
+     margin-left: 0;
+    }
+    .card{
+     max-width:570px;
+    }
+    .date{
+     margin-left: 0;
+    }
+    .card p{
+     font-size: 12px;
+    }
+    .songs{
+     width:570px;
+    }
+    .first-sec{
+     width: 500px;
+    }
+    .second{
+     width: 500px;
+    }
+    .controls{
+     width: 770px;
+    }   
+    .info p{
+     font-size: 12px;
+    } 
+    #pic{
+     margin-top: 10px;
+    }
+    #her{
+     margin-top: 25px;
+     margin-left: 10px;
+     width: 30px;
+     height: 30px;
+     }
+     .musicont{
+         width: 300px;
+         margin-left: 0;
+     }
+     .play{
+         width: 200px;
+         margin-left: 90px;
+     }
+     .player{
+     min-width:fit-content
+     }
+     #length{
+         width: 300px;
+         margin-left: 30px;
+     }
+     .mick{
+         min-width:120px;
+         margin-left: 140px;
+     }
+     .ex, #vol{
+         display: none;
+     }
+ }
+
+ @media screen and (width<=320px) {
+    .main{
+     display: grid;
+     grid-template-columns: auto;
+     grid-template-rows: 100px auto 700px auto;
+     row-gap: 0;
+    }
+    .sidebar{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    z-index: 1;
+    height: 100px;
+    width: 860px;
+    }
+    .side{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 253px;
+    }
+    .fav{
+        display: none;
+    }
+    #yol{
+        display: none;
+    }
+    .side2{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+    }
+    .top{
+     grid-row: 2/3;
+     grid-column: 1/4;
+     height: 300px;
+     width: 860px;
+     z-index: 0;
+    }
+    .ima{
+        display: none;
+    }
+    .songs{
+        grid-row: 3/4;
+        grid-column: 1/4;
+        width: 860px;
+        padding-top: 20vh;
+    }
+    .controls{
+        grid-row: 4/5;
+        width: 860px;
+    }
+    .musicont{
+        width: 300px;
+        margin-left: 0;
+    }
+    .play{
+        width: 200px;
+        margin-left: 90px;
+    }
+    .player{
+    min-width:fit-content
+    }
+    #length{
+        width: 300px;
+        margin-left: 30px;
+    }
+    .mick{
+        min-width:120px;
+        margin-left: 140px;
+    }
+    .ex, #vol{
+        display: none;
+    }
+    .card{
+        max-width: 650px;
+       }
+       .date{
+        margin-left: 0;
+       }
+    #salena{
+     margin-top: 80px;
+     width: 300px;
+     background-position: -19px;
+     height: 150px;
+    }
+    .text h1{
+     font-size: 30px;
+     font-weight: 700;
+    }
+    .text p{
+     font-size: 13px;
+    }
+    .pu{
+     margin-left: 0;
+    }
+    .card{
+     max-width: 850px;
+    }
+    .date{
+     margin-left: 0;
+    }
+    .card p{
+     font-size: 12px;
+    }
+    .first-sec{
+     width: 500px;
+    }
+    .second{
+     width: 500px;
+    }  
+    .last{
+        margin-left: 400px;
+    }
+    .info p{
+     font-size: 12px;
+    } 
+    #pic{
+     margin-top: 10px;
+    }
+    #her{
+     margin-top: 25px;
+     margin-left: 10px;
+     width: 30px;
+     height: 30px;
+     }
+ }

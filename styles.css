@@ -321,13 +321,131 @@ li>a{
         display: none;
     } 
 
-}
+}   
+
 
 @media (width<=320px){
     .main{
         display: grid;
         grid-template-columns: auto;
 
+    }
+    .top-arr{
+        grid-column: 1/12;
+    }
+    .sidebar{
+        grid-column: 1/12;
+        position: sticky;
+        top: 0;
+        max-height: 100px;
+        z-index: 1;
+        overflow: hidden;
+    }
+    .side{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .side2{
+        display: flex;
+        flex-direction: row;
+        margin-left: 70px;
+    }  
+    .hero{
+        grid-column: 1/12;
+        width: 204vh;
+        height: 140vh;
+    }
+    #sep{
+        margin-top: 5px;
+    }
+    .fav, .fav1, .install{
+        display: none;
+    }
+    .foot{
+        width: 204vh;
+    }
+    #non{
+       display: none;
+    }
+    .top-arr{
+    display: none;
+    }
+    .hero{
+        height: 300vh;
+    }
+    .one img{
+        width: 50px;
+        height:50px;
+    }
+    .two img{
+        width: 50px;
+        height:50px;
+    }
+    .cards1{
+        width: 250px;
+        height: 50px;
+        margin: auto;
+        font-size: 15px;
+    }
+    .images{
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 0px;
+    }
+    .images img{
+        width:18rem;
+        height: 10rem;
+    }
+    #pic{
+        height: 60px;
+        width: 50px;
+        padding: 3px;
+    }
+    .info p{
+        font-size: 12px;
+    }
+    .green{
+       display: none;
+    }
+    .controls{
+        width: 700px;
+    }
+    .musicont{
+        width: 200px;
+    }
+    .player{
+        max-width: 400px;
+        margin-left: 60px;
+    }
+    .play{
+        min-width: 200px;
+        margin-left: 180px;
+    }
+    #length{
+        width: 400px;
+        margin-left: 10px;
+    }
+    .mick{
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 40px;
+    }
+    .mick img{
+        width: 12px;
+        height: 12px;
+        margin-left: 10px;
+    }
+    #vol, #ex{
+        display: none;
+    } 
+
+}
+
+@media (width<=426px){
+    .main{
+        display: grid;
+        grid-template-columns: auto;
     }
     .top-arr{
         grid-column: 1/12;
@@ -391,7 +509,11 @@ li>a{
     .images{
         display: grid;
         grid-template-columns: auto auto;
-        column-gap: 10px;
+        column-gap: 0px;
+    }
+    .images img{
+        width:18rem;
+        height: 10rem;
     }
     #pic{
         height: 60px;
@@ -435,5 +557,4 @@ li>a{
     #vol, #ex{
         display: none;
     } 
-
-}
+} 
